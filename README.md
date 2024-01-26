@@ -1,6 +1,6 @@
 # How to use props in React
 
-
+![cover](./src/props.JPG)
 
 
 ## 🦉 Main information
