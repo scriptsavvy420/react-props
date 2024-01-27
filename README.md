@@ -9,6 +9,8 @@ Simple exercise to learn how to use props in React.
 
 Props are inputs to a React component. They are data passed down from a parent component to a child component.
 
+Let's learn how they work using the example of a simple dating app.
+
 First, we need to create a new React project with an empty App.js file.
 
 ```
@@ -41,7 +43,24 @@ function Profiles() {
 export default Profiles;
 ```
 
-I specifically leave empty spaces after the colon since we will transfer this information from the parent App.js to the child Profile.js
+I specifically leave empty spaces after the colon since we will transfer this information from the parent App.js to the child Profile.js.
+
+We will now import this component into the App.js components.
+
+```
+import Profiles from "./Profiles";
+
+function App() {
+  return (
+    <div>
+      <Profiles/>
+    </div>
+  );
+}
+
+```
+
+
 
 ## 🦊 Useful links
 
