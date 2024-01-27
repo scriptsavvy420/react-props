@@ -95,11 +95,11 @@ function App() {
 
 export default App;
 ```
-For profile images you can upload photos to source folder and then import them to App.js or you can find some nice images on on free online site like a [unsplash.com](https://unsplash.com/) site.
+For profile images you can upload photos to source folder and then import them to App.js or you can find some nice images on free online site like a [unsplash.com](https://unsplash.com/) site.
 
 Now add other required information for the profile cards.
 
-And if you want this information to pass to the Profiles component, you need to add the word props in parentheses of App function.
+And if you want this information to pass to the Profiles component, you need to add the word `props` in parentheses of App function.
 
 ```
 function App(props) {
@@ -135,11 +135,31 @@ function App(props) {
 
 export default App;
 ```
+Let's pass these props to the Profiles components. For this we need to add the word `props` in parentheses of Profiles function and add them to our tags inside curly brackets.
 
+```
+function Profiles(props) {
+    return (
+        <div className="item">
+            <img src={props.img} alt="Profile photo" width="300px" />
+            <h2>Name: {props.name}</h2>
+            <p>Age: {props.age} | Height: {props.height} | Weight: {props.weight}</p>
+            <p>About: {props.description}</p>
+        </div>
+    )
+}
+
+export default Profiles;
+``` 
+That's all! Now add a simple css just to make our profile cards a little more nice looking.
 
 ## 🦊 Useful links
 
+### Components and Props
 
+```
+https://legacy.reactjs.org/docs/components-and-props.html
+```
 
 
 
