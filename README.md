@@ -7,19 +7,47 @@
 
 Simple exercise to learn how to use props in React.
 
-### `npm start`
+Props are inputs to a React component. They are data passed down from a parent component to a child component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+First, we need to create a new React project with an empty App.js file.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+function App() {
+  return (
+    <div>
+    
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+Next step we need to create a new document in the src folder and let's called it Profile.js. We will create a profile card where we will have a profile photo and some information like a name, an age, height, weight and About section. For this we need one `img` tag for photo, `h2` for name and a few `p` for other information.
+
+```
+function Profiles() {
+    return (
+        <div>
+            <img />
+            <h2>Name:</h2>
+            <p>Age:  | Height:  | Weight: </p>
+            <p>About: </p>
+        </div>
+    )
+}
+
+export default Profiles;
+```
+
+I specifically leave empty spaces after the colon since we will transfer this information from the parent App.js to the child Profile.js
 
 ## 🦊 Useful links
 
 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
 
 
 
