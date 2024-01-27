@@ -59,6 +59,43 @@ function App() {
 }
 
 ```
+Let's add the necessary props to our component. We will have 3 cards with the different girls profiles.
+
+```
+function App() {
+  return (
+    <div">
+      <Profiles
+        img=""
+        name=""
+        age=""
+        height=""
+        weight=""
+        description=""
+      />
+      <Profiles
+        img=""
+        name=""
+        age=""
+        height=""
+        weight=""
+        description=""
+      />
+      <Profiles
+        img=""
+        name=""
+        age=""
+        height=""
+        weight=""
+        description=""
+      />
+    </div>
+  );
+}
+
+export default App;
+```
+
 
 
 
